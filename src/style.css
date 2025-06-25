@@ -62,6 +62,124 @@ a {
 
 /* Everything above is CSS reset */
 
+:root {
+  --header-footer-background-color: rgb(255, 179, 102);
+}
+
 body {
     background-color: rgb(255, 243, 230);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+  flex: 0 0 100px        ;
+  grid-row: 1;
+  position: sticky;
+  top: 0px;
+  background-color: var(--header-footer-background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px 0 50px;
+}
+
+header button {
+  border: none;
+  background-color: rgb(32, 96, 64);
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border-radius: 15px;
+  color: white;
+}
+
+header > nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+header > h1 {
+  font-size: 2.1rem;
+}
+
+#content {
+  color: black;
+  flex: 1;
+}
+
+footer{
+  background-color: var(--header-footer-background-color);
+  font-size: 1rem;
+  display: flex;
+  flex: 0 0 150px;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+
+.home-tab { 
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+.home-info {
+  grid-column: 1;
+}
+
+.home-image {
+  grid-column: 2;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.phone {
+  display: inline;
+  width: 30px;
+  height: 30px;
+}
+
+.uber-eats-logo {
+  max-height: 90px;
+  width: auto;
+  height: auto;
+  background-color: white;
+  padding: 10px;
+}
+
+.github-logo {
+  max-width: 60px;
+  max-height: 60px;
+  width: auto;
+  height: auto;
+}
+
+.uber-eats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.github { 
+  display: flex;
+  align-items: center;
+}
+
+.github > a {
+  margin: 0 5px;
+}
+
+.github-logo {
+  display: inline;
+  margin-left: 10px;
 }
