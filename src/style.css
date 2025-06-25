@@ -70,11 +70,11 @@ body {
     background-color: rgb(255, 243, 230);
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 header {
-  flex: 0 0 100px        ;
-  grid-row: 1;
+  flex-basis: 100px;
   position: sticky;
   top: 0px;
   background-color: var(--header-footer-background-color);
@@ -104,32 +104,35 @@ header > h1 {
 }
 
 #content {
-  color: black;
-  flex: 1;
+  flex: 1 0 auto;
+}
+
+.home-tab { 
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-items: center;
+  grid-template-rows: 1fr;
+  height: 100%;
+}
+
+.home-text {
+  grid-column: 1;
+  padding: 100px;
+  font-size: 1.75rem;
+}
+
+.home-image {
+  grid-column: 2;
 }
 
 footer{
   background-color: var(--header-footer-background-color);
   font-size: 1rem;
   display: flex;
-  flex: 0 0 150px;
+  flex: 0 0 110px;
   justify-content: space-around;
   align-items: center;
   font-size: 1.3rem;
-}
-
-
-.home-tab { 
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-}
-
-.home-info {
-  grid-column: 1;
-}
-
-.home-image {
-  grid-column: 2;
 }
 
 .contact-info {
@@ -149,12 +152,24 @@ footer{
   height: 30px;
 }
 
+.uber-eats {
+  display: flex;
+  align-items: center;
+}
+
 .uber-eats-logo {
+  display: inline;
   max-height: 90px;
   width: auto;
   height: auto;
   background-color: white;
   padding: 10px;
+  margin-left: 20px;
+}
+
+.github { 
+  display: flex;
+  align-items: center;
 }
 
 .github-logo {
@@ -164,16 +179,6 @@ footer{
   height: auto;
 }
 
-.uber-eats {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.github { 
-  display: flex;
-  align-items: center;
-}
 
 .github > a {
   margin: 0 5px;
