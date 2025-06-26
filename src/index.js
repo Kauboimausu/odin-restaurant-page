@@ -1,5 +1,6 @@
 import "./style.css";
 import homeTab from "./home.js";
+import menuTab from "./menu.js";
 
 const TabManager = (function () {
 
@@ -13,6 +14,11 @@ const TabManager = (function () {
     homeButton.addEventListener("click", () => {
         content.textContent = '';
         content.appendChild(homeTab);
+    });
+
+    menuButton.addEventListener("click", () => {
+        content.textContent = '';
+        content.appendChild(menuTab);
     });
 
 
