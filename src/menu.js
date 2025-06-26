@@ -1,4 +1,5 @@
 const menu = document.createElement("div");
+menu.classList.add("menu");
 
 import salad from "../img/salad.jpg";
 const card1 = document.createElement("div");
@@ -9,6 +10,7 @@ const paragraph1 = document.createElement("p");
 paragraph1.textContent = "Lettuce, tomato, onion, black olives and cucumber with a yoghurt dressing and goat cheese";
 const image1 = document.createElement("img");
 image1.src = salad;
+image1.alt = "Mediterranean Salad";
 
 card1.appendChild(header1);
 card1.appendChild(paragraph1);
@@ -23,6 +25,7 @@ const paragraph2 = document.createElement("p");
 paragraph2.textContent = "Shrimp and spinach in spicy pink sauce with sprinkled goat cheese and toasted pine nuts.";
 const image2 = document.createElement("img");
 image2.src = linguine;
+image2.alt = "Viareggina Linguine";
 
 card2.appendChild(header2);
 card2.appendChild(paragraph2);
@@ -37,6 +40,7 @@ const paragraph3 = document.createElement("p");
 paragraph3.textContent = "A typical recipe with bacon, parmegiano regiano and organic eggs.";
 const image3 = document.createElement("img");
 image3.src = carbonara;
+image3.alt = "Carbonara Spaghetti";
 
 card3.appendChild(header3);
 card3.appendChild(paragraph3);
@@ -51,6 +55,7 @@ const paragraph4 = document.createElement("p");
 paragraph4.textContent = "With mozzarella, parmegiano, rockefort and gorgonzola cheese.";
 const image4 = document.createElement("img");
 image4.src = fourCheese;
+image4.alt = "Quattro Formaggi Pizze";
 
 card4.appendChild(header4);
 card4.appendChild(paragraph4);
@@ -65,6 +70,7 @@ const paragraph5 = document.createElement("p");
 paragraph5.textContent = "With mozzarella and pomodoro sauce.";
 const image5 = document.createElement("img");
 image5.src = margherita;
+image5.alt = "Margherita Pizze";
 
 card5.appendChild(header5);
 card5.appendChild(paragraph5);
@@ -79,6 +85,7 @@ const paragraph6 = document.createElement("p");
 paragraph6.textContent = "Marinated and grilled octopus served over eggplant puree, pomodoro sauce and sprinkled with goat cheese and parmegiano.";
 const image6 = document.createElement("img");
 image6.src = polipo;
+image6.alt = "Polipo Amalfitana";
 
 card6.appendChild(header6);
 card6.appendChild(paragraph6);
